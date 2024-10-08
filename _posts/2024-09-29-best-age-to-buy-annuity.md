@@ -91,7 +91,7 @@ where
 
 - $p_{x,t}$ is the probability of surviving from age $x$ to $x + t$
 
-- $y_{x,t}$ is the real forward gilt rate between the years corresponding to age $x$ and age $x + t$
+- $y_{x,t}$ is the real forward gilts rate between the years corresponding to age $x$ and age $x + t$
 
 Consecutive survival probabilities are related to one another through the mortality rate $q_x$
 
@@ -119,21 +119,21 @@ If we take the Taylor series[^taylor-series] and ignore all second order product
 
 $$ q_x > r - y_{x,1} $$
 
-**That is, an annuity becomes the cheapest choice when the mortality rate exceeds the difference between the investment rate and the gilt yield.**
+**That is, an annuity becomes the cheapest choice when the mortality rate exceeds the difference between the investment return rate and the gilts yield.**
 
 Which makes sense:
 
 - when investing, future consumption can be discounted by the investment return rate;
 
-- whereas with annuities future consumption can be discounted by the gilt yields, _and_ by the mortality credits.
+- whereas with annuities future consumption can be discounted by the gilts yield, _and_ by the mortality credits.
 
-All rates so far should have been the real (inflation adjusted) rates, but because we take the difference of two rates, the relation also holds true with nominal investment returns rates and gilts yields.
+All rates so far should have been the real (inflation adjusted) rates, but because we take the difference of two rates, the relation also holds true with nominal investment returns rates and gilts yield.
 
 And if the investment is equities then it basically means that an annuity becomes cheaper when the mortality rate exceeds the equity risk premium.
 
 We ignored fees, but they won't change things materially.
 Mortality rates start with values very near zero for young ages, but then shoot up like an hockey stick later in life.
-**There will be age from which mortality rates will dominate everything else: high investment return rates, low gilt yields, and even fees.**
+**There will be age from which mortality rates will dominate everything else: high investment return rates, low gilts yields, and even fees.**
 
 These are the 2024/2025 unisex mortality rates from the Institute and Faculty of Actuaries[^mortality-table]:
 
@@ -147,7 +147,7 @@ These are the 2024/2025 unisex mortality rates from the Institute and Faculty of
 </script>
 
 If we assume a 100% equity portfolio on MSCI World Index, currently an annualized 9.64% return since inception[^msci-world], and use the
-Latest 15-Year Gilt Yield[^gilt-yields], currently at 4.28%, as the gilt yield, then annuity will become cheaper when mortality rate reaches 5.36%, that is, 83-84 years old.
+Latest 15-Year Gilt Yield[^gilt-yields], currently at 4.28%, as the gilts yield, then annuity will become cheaper when mortality rate reaches 5.36%, that is, 83-84 years old.
 
 If we assume a 60%/40% MSCI World/Gilts portfolio instead, then annuity would become cheaper when mortality rate reaches 3.22%, that is, approximately 80 years old.
 
